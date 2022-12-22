@@ -97,6 +97,13 @@ const eventHandler = async ( client ) => {
         await interaction.channel.send({ content: `${B}${iJ}${B}` })
       }
 
+      if(interaction.cudtomId === 'comment'){
+        // Here I will get the twitter_user with discordID and looking to their twitter user in a database. 
+        // Problem is how to get the the tweet_id
+        twitterLikeAndRetweet(twitter_user, tweet_id)
+        return
+      }
+
   })
 }
 
